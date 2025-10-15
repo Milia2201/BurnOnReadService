@@ -1,0 +1,11 @@
+{% extends "_baselayout.html" %} {% block body %}
+<body>
+  <h1>Submit your Message</h1>
+  <article>
+    <form action="/message-saved" method="POST">
+      <input type="text" name="textInput" required/>
+      <button>push me</button>
+    </form>
+  </article>
+</body>
+{% endblock %}
